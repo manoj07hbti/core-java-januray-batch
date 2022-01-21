@@ -49,6 +49,13 @@ public class ConditionalPart2 {
             System.out.println("OR OPERATOR : NOT First division with IT ");
         }
 
+        if (age>18 && cityName=="AGRA" || marks>60 || section=="IT"){
+            System.out.println("IF EXECUTED IN MULTIPLE CONDITION ");
+        }
+        else {
+
+            System.out.println("ELSE EXECUTED IN MULTIPLE CONDITION ");
+        }
 
     }
 }
