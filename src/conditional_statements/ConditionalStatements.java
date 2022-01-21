@@ -16,5 +16,16 @@ public class ConditionalStatements {
             System.out.println("NOT Eligible for VOTING...");
         }
 
+        String cityName="Delhi";
+
+        if(cityName=="AGRA"){
+
+            System.out.println("You are in Agra");
+        }
+        else {
+            System.out.println("You are NOT in Agra");
+        }
+
+
     }
 }
