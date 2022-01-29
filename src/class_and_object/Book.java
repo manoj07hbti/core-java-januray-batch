@@ -10,12 +10,27 @@ public class Book {
 
     // capabilities  or METHOD or FUNCTION
     // read
+    // Syntax : access_specifier return_type  method_name (parameter) {}
+    public void read(){
+
+        System.out.println("This is Read Method of Book");
+    }
+
     // write
+
+    public void write(){
+
+        System.out.println("This is Write Method of Book");
+    }
 
     public static void main(String[] args) {
         //Object creation
         // SYNTAX : ClassName objName= new ClassName();
         Book book1= new Book();
+
+        book1.read();// calling read method
+        book1.write();
+
         System.out.println("Printing book 1 Object : " +book1.name);
         System.out.println("Printing book 1 Object : " +book1.pages);
         System.out.println("Printing book 1 Object : " +book1.price);
