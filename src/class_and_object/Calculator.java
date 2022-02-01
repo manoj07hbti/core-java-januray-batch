@@ -1,5 +1,7 @@
 package class_and_object;
 
+import java.util.Scanner;
+
 public class Calculator {
 
     //Data member
@@ -11,8 +13,11 @@ public class Calculator {
 
     public void addition(){
 
-        int a=13;
-        int b=33;
+       System.out.println("ADITION : Please enter value of a: ");
+        Scanner obj= new Scanner(System.in);
+        int a=obj.nextInt();
+        System.out.println("Please enter value of b: ");
+        int b=obj.nextInt();
         int result=a+b;
         System.out.println("This is Addition Method .."+result);
     }
@@ -20,8 +25,11 @@ public class Calculator {
     //subtraction
 
     public void subtraction (){
-        int a=55;
-        int b=33;
+        System.out.println("SUBTRACTION : Please enter value of a: ");
+        Scanner obj= new Scanner(System.in);
+        int a=obj.nextInt();
+        System.out.println("Please enter value of b: ");
+        int b=obj.nextInt();
 
         int result=a-b;
         System.out.println("This is Subtraction Method .."+result);
@@ -30,10 +38,16 @@ public class Calculator {
 // multi    a*b;
 
     public static void main(String[] args) {
-
+        Scanner scanner= new Scanner(System.in);
         Calculator obj= new Calculator();
-        obj.addition();
-        obj.subtraction();
+        int flag=0;
+        do {
+            obj.addition();
+            obj.subtraction();
+            System.out.println("********Please press 1 to continue or any number to quit:**************");
+            flag=scanner.nextInt();
+        }
+        while (flag==1);
     }
 
 
