@@ -1,5 +1,7 @@
 package class_and_object;
 
+import java.util.Scanner;
+
 public class CalculatorWithInput {
 
     public void add(int a, int b){
@@ -13,8 +15,25 @@ public class CalculatorWithInput {
     //divide
     public static void main(String[] args) {
 
-        CalculatorWithInput obj= new CalculatorWithInput();
+        Scanner scanner= new Scanner(System.in);
+        int choice =0;
+        System.out.println("Please enter 1 for Add, 2 for Subtraction , 3 Divide 4 multi :");
+        choice=scanner.nextInt();
 
-        obj.add(13,6);
+
+        CalculatorWithInput obj= new CalculatorWithInput();
+        if (choice==1){
+
+            obj.add(13,6);
+        }else if(choice==2){
+            //subtraction
+        }
+        else if (choice==3){
+            // Divide
+        }
+        else {
+            //multi
+        }
+
     }
 }
