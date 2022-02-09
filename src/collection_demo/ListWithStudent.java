@@ -35,7 +35,7 @@ public class ListWithStudent {
 
 
             System.out.println("Printing name "+var.getName());
-            System.out.println("Printing Age "+var.getAge());
+            //System.out.println("Printing Age "+var.getAge());
             System.out.println("Printing Section "+var.getSection());
 
         }

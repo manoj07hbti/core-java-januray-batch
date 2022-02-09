@@ -1,17 +1,32 @@
 package model;
 
+import java.util.Objects;
+
 public class Student {
 
     String name;
-    int age;
+    int rollno;
     String section;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return rollno == student.rollno;
+    }
+
+    @Override
+    public int hashCode() {
+        return rollno;
+    }
 
     // parameterized constructor
 
 
-    public Student(String name, int age, String section) {
+    public Student(String name, int rollno, String section) {
         this.name = name;
-        this.age = age;
+        this.rollno = rollno;
         this.section = section;
     }
 
@@ -26,12 +41,12 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public int getRollno() {
+        return rollno;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setRollno(int age) {
+        this.rollno = age;
     }
 
     public String getSection() {
